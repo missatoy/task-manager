@@ -1,0 +1,9 @@
+<div class="container row col-sm-12 col-lg-5">
+  <h1>Your task manager</h1>
+  <div>
+    <% @tasks.each do |t| %>
+      <h3><%= t.name %></h3>
+      <p><%= t.description %></p>
+    <% end %>
+  </div>
+</div>
